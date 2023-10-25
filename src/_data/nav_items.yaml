@@ -1,0 +1,10 @@
+---
+items:
+  - name: About
+    url: '/about'
+  - name: Samples
+    url: '/samples'
+  - name: Blog
+    url: '/blog'
+  - name: Shop
+    url: '/shop'

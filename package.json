@@ -14,5 +14,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "tailwindcss": "^3.3.4"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
   }
 }

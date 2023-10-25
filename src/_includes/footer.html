@@ -1,0 +1,11 @@
+<footer class="bg-secondary-500 text-white flex justify-between px-4 md:px-8 py-2">
+    <div>
+        <p>&copy <span id="year"></span> Coded by <a href="https://github.com/sandeepsingh11/" target="_blank" rel="noopener noreferrer">Sandeep</a></p>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4">
+        {% for social in socials.items %}
+            <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer"><i data-feather="{{ social.icon }}" stroke="currentColor" stroke-width="2"></i></a>
+        {% endfor %}
+    </div>
+</footer>
