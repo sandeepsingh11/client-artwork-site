@@ -18,6 +18,19 @@
     {% include "footer.html" %}
 
     <script>
+        // mobile nav menu
+        const hamburgerOpenEle = document.getElementById('hamburger-open');
+        const hamburgerCloseEle = document.getElementById('hamburger-close');
+        const navbarEle = document.getElementById('navbar-sticky');
+        const navbarMobileEle = document.getElementById('mobile-navbar');
+
+        hamburgerOpenEle.addEventListener('click', () => {
+            navbarMobileEle.classList.remove('hidden');
+        });
+        hamburgerCloseEle.addEventListener('click', () => {
+            navbarMobileEle.classList.add('hidden');
+        });
+
         // copyright year
         document.getElementById('year').innerText = new Date().getFullYear();
     </script>
