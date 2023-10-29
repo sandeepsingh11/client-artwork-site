@@ -8,3 +8,5 @@ items:
     url: '/blog'
   - name: Shop
     url: '/shop'
+  - name: Donate
+    url: '/donate'

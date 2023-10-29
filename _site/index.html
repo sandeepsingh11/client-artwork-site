@@ -8,23 +8,23 @@
 
     <title>Artwork</title>
 </head>
-<body class="bg-secondary-500">
-    <nav class="fixed z-20 top-0 left-0 w-full h-16 text-white border-b border-transparent p-2">
+<body class="bg-white-500 text-black-500">
+    <nav class="fixed z-20 top-0 left-0 w-full h-16 border-b border-transparent p-2">
     <!-- non moble menu -->
     <div class="max-w-screen-xl h-full flex flex-wrap items-center justify-between mx-auto">
         <!-- left -->
         <a href="/" class="h-full">
-            <img src="/images/loid_forger.png" class="mr-3 h-full rounded" alt="Logo">
+            <img src="/images/loid_forger.png" class="h-full rounded" alt="Logo">
         </a>
 
         <!-- right -->
         <div class="flex items-center">
             <!-- CTA buttons and hamburger -->
             <div class="flex md:order-2">
-                <button type="button" class="bg-primary-500 hover:bg-primary-600 text-secondary-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-2">Samples</button>
+                <button type="button" class="bg-primary-500 hover:bg-primary-600 focus:ring-2 focus:outline-none focus:ring-black-500 font-medium rounded-lg px-4 py-2 text-center mr-2">Samples</button>
                 
                 <!-- mobile hamburger -->
-                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false" id="hamburger-open">
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black-500 rounded-lg md:hidden hover:bg-black-100 focus:outline-none focus:ring-2 focus:ring-black-200" aria-controls="navbar-sticky" aria-expanded="false" id="hamburger-open">
                     <span class="sr-only">Open navigation</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -34,22 +34,26 @@
 
             <!-- medium+ screen nav -->
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:mx-2 md:border-0">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:flex-row md:mt-0 md:mx-2">
                     
                         <li>
-                            <a href="/about" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-500 md:py-2 md:px-4">About</a>
+                            <a href="/about" class="block px-4 py-2 rounded-lg hover:bg-primary-500">About</a>
                         </li>
                     
                         <li>
-                            <a href="/samples" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-500 md:py-2 md:px-4">Samples</a>
+                            <a href="/samples" class="block px-4 py-2 rounded-lg hover:bg-primary-500">Samples</a>
                         </li>
                     
                         <li>
-                            <a href="/blog" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-500 md:py-2 md:px-4">Blog</a>
+                            <a href="/blog" class="block px-4 py-2 rounded-lg hover:bg-primary-500">Blog</a>
                         </li>
                     
                         <li>
-                            <a href="/shop" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-500 md:py-2 md:px-4">Shop</a>
+                            <a href="/shop" class="block px-4 py-2 rounded-lg hover:bg-primary-500">Shop</a>
+                        </li>
+                    
+                        <li>
+                            <a href="/donate" class="block px-4 py-2 rounded-lg hover:bg-primary-500">Donate</a>
                         </li>
                     
                 </ul>
@@ -58,18 +62,18 @@
     </div>
 
     <!-- mobile menu -->
-    <div class="hidden absolute left-0 top-0 bg-secondary-500 text-white text-center w-screen h-screen md:hidden" id="mobile-navbar">
+    <div class="hidden absolute left-0 top-0 text-center w-screen h-screen md:hidden bg-white-500" id="mobile-navbar">
         <!-- below class to match mobile logo size to non-mobile size -->
         <div class="h-16 border-b border-transparent p-2">
             <!-- menu header -->
-            <div class="flex justify-between mb-4 h-full">
+            <div class="flex justify-between items-center mb-4 h-full">
                 <!-- logo -->
                 <a href="/" class="h-full">
-                    <img src="/images/loid_forger.png" class="mr-3 h-full rounded" alt="Logo">
+                    <img src="/images/loid_forger.png" class="h-full rounded" alt="Logo">
                 </a>
     
                 <!-- X icon -->
-                <button data-collapse-toggle="mobile-nav-items" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-nav-items" aria-expanded="false" id="hamburger-close">
+                <button data-collapse-toggle="mobile-nav-items" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black-500 rounded-lg md:hidden hover:bg-black-100 focus:outline-none focus:ring-2 focus:ring-black-200" aria-controls="mobile-nav-items" aria-expanded="false" id="hamburger-close">
                     <span class="sr-only">Close navigation</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 460.775 460.775">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55 c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55 c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505 c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55 l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719 c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"/>
@@ -80,19 +84,23 @@
             <ul class="flex flex-col p-4 font-medium" id="mobile-nav-items">
                 
                     <li>
-                        <a href="/about" class="block py-3 px-4 text-gray-900">About</a>
+                        <a href="/about" class="block py-3 px-4 text-black-900">About</a>
                     </li>
                 
                     <li>
-                        <a href="/samples" class="block py-3 px-4 text-gray-900">Samples</a>
+                        <a href="/samples" class="block py-3 px-4 text-black-900">Samples</a>
                     </li>
                 
                     <li>
-                        <a href="/blog" class="block py-3 px-4 text-gray-900">Blog</a>
+                        <a href="/blog" class="block py-3 px-4 text-black-900">Blog</a>
                     </li>
                 
                     <li>
-                        <a href="/shop" class="block py-3 px-4 text-gray-900">Shop</a>
+                        <a href="/shop" class="block py-3 px-4 text-black-900">Shop</a>
+                    </li>
+                
+                    <li>
+                        <a href="/donate" class="block py-3 px-4 text-black-900">Donate</a>
                     </li>
                 
             </ul>
@@ -102,16 +110,16 @@
 
     <main>
         
-<div class="h-screen mt-16 md:p-10 flex flex-wrap justify-center items-center bg-secondary-500 text-white" id="hero">
+<div class="h-screen mt-16 md:p-10 flex flex-wrap justify-center items-center" id="hero">
     <!-- left side -->
     <div class="my-10 mx-auto">
-        <h1 class="text-5xl mb-2">My Artwork</h1>
+        <h1 class="text-6xl mb-2">My Artwork</h1>
         <p class="text-lg mb-3 text-center md:text-left">Check out my unique artwork!</p>
         
         <!-- CTA -->
         <div class="flex">
-            <a href="/samples" class="block w-fit mr-2 px-3 py-2.5 bg-transparent text-primary-500 rounded-lg border-2 border-primary-500 font-medium hover:bg-primary-500 focus:ring-2 hover:text-secondary-500 focus:ring-primary-300 focus:outline-none">Samples</a>
-            <a href="/shop" class="block w-fit px-3 py-2.5 bg-transparent text-accent-300 rounded-lg border-2 border-accent-300 font-medium hover:bg-accent-300 focus:ring-2 hover:text-secondary-500 focus:ring-accent-300 focus:outline-none">Shop</a>
+            <a href="/samples" class="block w-fit mr-2 px-3 py-2.5 bg-transparent text-primary-600 rounded-lg border-2 border-primary-600 font-medium hover:bg-primary-600 focus:ring-2 hover:text-black-500 focus:ring-primary-400 focus:outline-none">Samples</a>
+            <a href="/shop" class="block w-fit px-3 py-2.5 bg-transparent text-secondary-500 rounded-lg border-2 border-secondary-500 font-medium hover:bg-secondary-500 focus:ring-2 hover:text-black-500 focus:ring-secondary-400 focus:outline-none">Shop</a>
         </div>
     </div>
 
@@ -122,7 +130,7 @@
 </div>
     </main>
 
-    <footer class="bg-secondary-500 text-white flex justify-between px-4 md:px-8 py-2">
+    <footer class="bg-black-500 text-white-500 flex justify-between px-4 md:px-8 py-2">
     <div>
         <p>&copy <span id="year"></span> Coded by <a href="https://github.com/sandeepsingh11/" target="_blank" rel="noopener noreferrer">Sandeep</a></p>
     </div>
