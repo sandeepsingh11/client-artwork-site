@@ -11,8 +11,8 @@ layout: main.html
         
         <!-- CTA -->
         <div class="flex">
-            <a href="/samples" class="block w-fit mr-2 px-3 py-2.5 bg-transparent text-primary-600 rounded-lg border-2 border-primary-600 font-medium hover:bg-primary-600 focus:bg-primary-600 hover:text-black-500 focus:text-black-500 focus:ring-2 focus:ring-primary-500 focus:outline-none">Samples</a>
-            <a href="/shop" class="block w-fit px-3 py-2.5 bg-transparent text-secondary-500 rounded-lg border-2 border-secondary-500 font-medium hover:bg-secondary-500 focus:bg-secondary-500 hover:text-black-500 focus:text-black-500 focus:ring-2 focus:ring-secondary-500 focus:outline-none">Shop</a>
+            <a href="/samples" class="block w-fit mr-2 px-3 py-2.5 bg-transparent text-primary-600 rounded-lg border-2 border-primary-600 font-medium hover:bg-primary-600 focus:bg-primary-600 hover:text-white-500 focus:text-white-500 focus:ring-2 focus:ring-primary-500 focus:outline-none">Samples</a>
+            <a href="/shop" class="block w-fit px-3 py-2.5 bg-transparent text-primary-400 rounded-lg border-2 border-primary-400 font-medium hover:bg-primary-400 focus:bg-primary-400 hover:text-black-500 focus:text-black-500 focus:ring-2 focus:ring-primary-200 focus:outline-none">Shop</a>
         </div>
     </div>
 
@@ -26,10 +26,10 @@ layout: main.html
 <div class="mb-16 px-10" id="highlight">
     <h2 class="text-4xl text-center mb-8">Some awesome artwork</h2>
 
-    <div class="flex flex-wrap justify-center mb-6">
+    <div class="flex flex-wrap justify-center gap-8 mb-10">
         {% for item in artwork.items %}
             {% if item.highlight == 'yes' %}
-                <div class="w-[300px] h-[300px] mb-4 md:mx-2">
+                <div class="w-[250px] h-[250px]">
                     <a href="/{{ item.title }}" class="focus:ring-4 focus:outline-none focus:ring-black-500"><img src="/images/{{ item.image }}" alt="{{ item.title }}" class="w-full h-full object-cover"></a>
                 </div>
             {% endif %}
@@ -37,7 +37,7 @@ layout: main.html
     </div>
 
     <div class="text-center">
-        <a href="/samples" class="bg-primary-500 hover:bg-primary-600 focus:ring-2 focus:outline-none focus:ring-black-500 font-medium rounded-lg px-4 py-2 ">See more</a>
+        <a href="/samples" class="bg-primary-500 hover:bg-primary-600 text-white-500 focus:ring-2 focus:outline-none focus:ring-black-500 font-medium rounded-lg px-4 py-2">See more</a>
     </div>
 </div>
 
@@ -45,19 +45,19 @@ layout: main.html
 <div class="p-10 bg-secondary-500">
     <h2 class="text-4xl text-center mb-8">The Artist</h2>
 
-    <div class="flex flex-wrap items-center">
+    <div class="flex flex-wrap justify-center items-center">
         <div class="mb-8 md:w-1/2">
-            <p class="leading-loose">Aenean sagittis nunc a gravida mollis. Pellentesque pellentesque ut velit eu aliquet. Etiam sollicitudin elit at enim euismod vulputate. Suspendisse nibh purus, vestibulum et efficitur nec, fringilla non enim. Morbi commodo porta dui. Vivamus sit amet dolor augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent egestas semper massa. Donec sodales volutpat ligula, in semper purus tempus malesuada.
+            <p class="leading-loose">G4LLO (pronounced, Ga-yo like a Spanish rooster Gallo) is a multifaceted digital artist, vocalist, DJ. Everything about his life has involved chaos, and he has learned to become a friend to it. From being a first-generation Guatemalan-American, to learning that he has traits of AuDHD, OCD and Bipolar II. Or learning about his trans and queer identities, and his fluid sexuality too.
             </p>
         </div>
 
-        <div class="mb-8 w-[250px] md:w-1/2 mx-auto">
-            <img src="/images/loid_forger.png" alt="a photo of me, the artist" class="rounded-full max-w-[300px] mx-auto">
+        <div class="mb-8 w-[250px] max-w-[300px] md:w-1/2 mx-auto">
+            <img src="/images/loid_forger.png" alt="a photo of me, the artist" class="rounded-full mx-auto">
         </div>
     </div>
 
     <div class="text-center">
-        <a href="/about" class="inline-block bg-transparent hover:bg-primary-500 border-2 border-black-500 focus:ring-2 focus:outline-none focus:ring-black-500 font-medium rounded-lg px-4 py-2">About me</a>
+        <a href="/about" class="inline-block bg-transparent hover:bg-primary-600 text-primary-600 hover:text-white-500 border-2 border-primary-500 focus:ring-2 focus:outline-none focus:ring-primary-400 font-medium rounded-lg px-4 py-2">About me</a>
     </div>
 </div>
 
@@ -75,7 +75,7 @@ layout: main.html
             </div>
 
             <div>
-                <button type="submit" class="inline-block bg-transparent hover:bg-primary-600 focus:bg-primary-600 border-2 border-primary-600 focus:ring-2 focus:outline-none focus:ring-primary-500 font-medium text-primary-600 hover:text-black-500 focus:text-black-500 rounded-lg px-4 py-2">Submit</button>
+                <button type="submit" class="inline-block bg-transparent hover:bg-primary-600 focus:bg-primary-600 border-2 border-primary-600 focus:ring-2 focus:outline-none focus:ring-primary-500 font-medium text-primary-600 hover:text-white-500 focus:text-white-500 rounded-lg px-4 py-2">Submit</button>
             </div>
         </div>
     </form>
