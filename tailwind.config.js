@@ -70,6 +70,9 @@ module.exports = {
           '950': '#451414'
         }
       },
+      boxShadow: {
+        'retro': '8px 8px 0px 0px rgba(51,51,51,1)'
+      }
     },
   },
   plugins: [],

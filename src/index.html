@@ -24,20 +24,30 @@ layout: main.html
 
 <!-- highlight artworks -->
 <div class="mb-16 px-10" id="highlight">
-    <h2 class="text-4xl text-center mb-8">Some awesome artwork</h2>
+    <h2 class="text-4xl text-center mb-12">Some awesome artwork</h2>
 
     <div class="flex flex-wrap justify-center gap-8 mb-10">
         {% for item in artwork.items %}
             {% if item.highlight == 'yes' %}
-                <div class="w-[250px] h-[250px]">
-                    <a href="/{{ item.title }}" class="focus:ring-4 focus:outline-none focus:ring-black-500"><img src="/images/{{ item.image }}" alt="{{ item.title }}" class="w-full h-full object-cover"></a>
+                <div class="border-4 border-black-500 shadow-retro">
+                    <a href="/{{ item.title }}" class="focus:ring-4 focus:outline-none focus:ring-black-500">
+                        <!-- art image -->
+                        <div class="w-[250px] h-[250px]">
+                            <img src="/images/{{ item.image }}" alt="{{ item.title }}" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- art caption -->
+                        <div class="border-t-2 border-black-500 py-3">
+                            <p class="text-center">{{ item.title }}</p>
+                        </div>
+                    </a>
                 </div>
             {% endif %}
         {% endfor %}
     </div>
 
     <div class="text-center">
-        <a href="/samples" class="bg-primary-500 hover:bg-primary-600 text-white-500 focus:ring-2 focus:outline-none focus:ring-black-500 font-medium rounded-lg px-4 py-2">See more</a>
+        <a href="/samples" class="block w-fit mx-auto px-3 py-2.5 bg-primary-200 text-primary-600 border-4 border-primary-600 font-medium hover:bg-primary-600 focus:bg-primary-600 hover:text-white-500 focus:text-white-500 focus:ring-2 focus:ring-primary-500 focus:outline-none">See more</a>
     </div>
 </div>
 
