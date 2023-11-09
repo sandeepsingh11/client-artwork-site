@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="/css/style.css" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet">
 
-    <title>{{ title | default: 'Artwork' }}</title>
-</head>
-<body class="bg-white-500 text-black-500">
-    {% include "navbar.html" %}
+        <title>{{ title | default: 'Artwork' }}</title>
+    </head>
 
-    <main>
-        {{ content }}
-    </main>
+    <body class="bg-white-500 text-black-500">
+        {% include "navbar.html" %}
 
-    {% include "footer.html" %}
+        <main class="min-h-screen">
+            {{ content }}
+        </main>
 
-    <script>
-        // mobile nav menu
-        const hamburgerOpenEle = document.getElementById('hamburger-open');
-        const hamburgerCloseEle = document.getElementById('hamburger-close');
-        const navbarEle = document.getElementById('navbar-sticky');
-        const navbarMobileEle = document.getElementById('mobile-navbar');
+        {% include "footer.html" %}
 
-        hamburgerOpenEle.addEventListener('click', () => {
-            navbarMobileEle.classList.remove('hidden');
-        });
-        hamburgerCloseEle.addEventListener('click', () => {
-            navbarMobileEle.classList.add('hidden');
-        });
+        <script>
+            // mobile nav menu
+            const hamburgerOpenEle = document.getElementById('hamburger-open');
+            const hamburgerCloseEle = document.getElementById('hamburger-close');
+            const navbarEle = document.getElementById('navbar-sticky');
+            const navbarMobileEle = document.getElementById('mobile-navbar');
 
-        // copyright year
-        document.getElementById('year').innerText = new Date().getFullYear();
-    </script>
-</body>
+            hamburgerOpenEle.addEventListener('click', () => {
+                navbarMobileEle.classList.remove('hidden');
+            });
+            hamburgerCloseEle.addEventListener('click', () => {
+                navbarMobileEle.classList.add('hidden');
+            });
+
+            // copyright year
+            document.getElementById('year').innerText = new Date().getFullYear();
+        </script>
+    </body>
 </html>
