@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="/css/style.css" rel="stylesheet">
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
         <title>Artwork</title>
     </head>
@@ -133,18 +134,18 @@
     </div>
 </div>
 
-<!-- highlight artworks -->
+<!-- highlight samples -->
 <div class="mb-16 px-10" id="highlight">
-    <h2 class="text-4xl text-center mb-12 font-medium">Some awesome artwork</h2>
+    <h2 class="text-4xl text-center mb-12 font-medium">Some awesome samples</h2>
 
     <div class="flex flex-wrap justify-center gap-8 mb-10">
         
             
                 <div class="border-4 border-black-500 shadow-retro">
-                    <a href="/Artwork 1" class="focus:ring-4 focus:outline-none focus:ring-black-500">
+                    <a href="/artwork-1" class="focus:ring-4 focus:outline-none focus:ring-black-500">
                         <!-- art image -->
-                        <div class="w-[250px] h-[250px]">
-                            <img src="/images/art-1.jpg" alt="Artwork 1" class="w-full h-full object-cover">
+                        <div>
+                            <img src="/images/art-1.jpg" alt="Artwork 1" class="w-[250px] h-[250px] md:w-[200px] md:h-[200px] lg:w-[275px] lg:h-[275px] object-cover">
                         </div>
 
                         <!-- art caption -->
@@ -159,10 +160,10 @@
         
             
                 <div class="border-4 border-black-500 shadow-retro">
-                    <a href="/Artwork 3" class="focus:ring-4 focus:outline-none focus:ring-black-500">
+                    <a href="/artwork-3" class="focus:ring-4 focus:outline-none focus:ring-black-500">
                         <!-- art image -->
-                        <div class="w-[250px] h-[250px]">
-                            <img src="/images/art-3.jpg" alt="Artwork 3" class="w-full h-full object-cover">
+                        <div>
+                            <img src="/images/art-3.jpg" alt="Artwork 3" class="w-[250px] h-[250px] md:w-[200px] md:h-[200px] lg:w-[275px] lg:h-[275px] object-cover">
                         </div>
 
                         <!-- art caption -->
@@ -175,10 +176,10 @@
         
             
                 <div class="border-4 border-black-500 shadow-retro">
-                    <a href="/Artwork 4" class="focus:ring-4 focus:outline-none focus:ring-black-500">
+                    <a href="/artwork-4" class="focus:ring-4 focus:outline-none focus:ring-black-500">
                         <!-- art image -->
-                        <div class="w-[250px] h-[250px]">
-                            <img src="/images/artwork-4.jpg" alt="Artwork 4" class="w-full h-full object-cover">
+                        <div>
+                            <img src="/images/artwork-4.jpg" alt="Artwork 4" class="w-[250px] h-[250px] md:w-[200px] md:h-[200px] lg:w-[275px] lg:h-[275px] object-cover">
                         </div>
 
                         <!-- art caption -->
@@ -263,6 +264,17 @@
 
             // copyright year
             document.getElementById('year').innerText = new Date().getFullYear();
+
+            // Decap CMS
+            if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", user => {
+                    if (!user) {
+                        window.netlifyIdentity.on("login", () => {
+                            document.location.href = "/admin/";
+                        });
+                    }
+                });
+            }
         </script>
     </body>
 </html>

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="/css/style.css" rel="stylesheet">
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
         <title>Artwork</title>
     </head>
@@ -120,7 +121,7 @@
 
 <div class="flex flex-wrap justify-evenly py-8 px-6 lg:py-16 lg:px-16">
     <div class="border-4 border-black-500 shadow-retro w-full md:w-3/4 max-w-[300px] md:max-w-[350px] lg:max-w-[400px] mx-auto lg:mr-12">
-        <img src="/images/art-1.jpg" alt="Artwork 1">
+        <img src="/images/art-1.jpg" alt="Artwork 1" class="w-full">
     </div>
 
     <div class="w-full md:w-1/3 max-w-[300px] md:max-w-[100%] mt-6 mx-auto lg:ml-12">
@@ -160,6 +161,17 @@
 
             // copyright year
             document.getElementById('year').innerText = new Date().getFullYear();
+
+            // Decap CMS
+            if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", user => {
+                    if (!user) {
+                        window.netlifyIdentity.on("login", () => {
+                            document.location.href = "/admin/";
+                        });
+                    }
+                });
+            }
         </script>
     </body>
 </html>

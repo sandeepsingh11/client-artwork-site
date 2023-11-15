@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "src/images"
+public_folder: ""
+
+# run "npx decap-server" for local backend
+local_backend: true
+# publish_mode: editorial_workflow
+
+collections:
+  - label: "Artwork"
+    name: "artwork"
+    editor:
+      preview: false
+    files:
+      - label: "Samples"
+        name: "samples"
+        file: "src/_data/samples.yaml"
+        fields:
+          - label: Sample Items
+            name: items
+            widget: list
+            allow_add: true
+            collapsed: true
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: desc, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Spotlight, name: highlight, widget: boolean, default: false }
+              - { label: Price, name: price, widget: number }
+              - { label: Date, name: date, widget: datetime, date_format: "MM/DD/YYYY", format: "MM/DD/YYYY" }
