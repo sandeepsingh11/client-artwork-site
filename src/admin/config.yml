@@ -29,5 +29,14 @@ collections:
               - { label: Description, name: desc, widget: string }
               - { label: Image, name: image, widget: image }
               - { label: Spotlight, name: highlight, widget: boolean, default: false }
+              - label: Audio
+                name: audio
+                widget: file
+                media_folder: "/src/audio"
+                public_folder: ""
+                media_library:
+                  name: audio
+                  config:
+                    multiple: false
               - { label: Price, name: price, widget: number }
               - { label: Date, name: date, widget: datetime, date_format: "MM/DD/YYYY", format: "MM/DD/YYYY" }

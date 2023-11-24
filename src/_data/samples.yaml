@@ -1,24 +1,28 @@
 items:
   - title: Artwork 1
     image: art-1.jpg
+    audio: rain-and-thunder-nature-sounds-min.mp3
     highlight: yes
     desc: This is my first art piece. Plz enjoy.
     price: 4
     date: 10/29/2023
   - title: Artwork 2
     image: art-2.jpg
+    audio: rain-and-thunder-nature-sounds-min.mp3
     highlight: no
     desc: Wow look at this, it took me a lot of time.
     price: 5.5
     date: 10/29/2023
   - title: Artwork 3
     image: art-3.jpg
+    audio: rain-and-thunder-nature-sounds-min.mp3
     highlight: yes
     desc: I like the ocean, so I drew an ocean. Insert some philosophical quote here.
     price: 4.5
     date: 10/29/2023
   - title: Artwork 4
     image: artwork-4.jpg
+    audio: rain-and-thunder-nature-sounds-min.mp3
     highlight: yes
     desc: Trying out abstract art. I'm sure this represents something...you decide
       lol.
@@ -26,6 +30,7 @@ items:
     date: 10/30/2023
   - title: Artwork 5
     image: artwork-5.jpg
+    audio: rain-and-thunder-nature-sounds-min.mp3
     highlight: no
     desc: Dang my fifth painting. Are you proud of me? You should be haha.
     price: 4.75
