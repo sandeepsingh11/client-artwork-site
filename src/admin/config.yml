@@ -3,13 +3,36 @@ backend:
   branch: master
 
 media_folder: "src/images"
-public_folder: ""
+public_folder: "images"
 
 # run "npx decap-server" for local backend
 local_backend: true
 # publish_mode: editorial_workflow
 
 collections:
+  - label: Pages
+    name: pages
+    editor:
+      preview: false
+    files:
+      - label: Home
+        name: home
+        file: "src/_data/pages/home.yaml"
+        fields:
+          - { name: hero_slogan, label: Slogan, widget: string }
+          - { name: hero_desc, label: Slogan Message, widget: string }
+          - { name: hero_image, label: Hero Image, widget: image }
+          - { name: about_image, label: About Image, widget: image }
+      - label: About
+        name: about
+        file: "src/_data/pages/about.yaml"
+        fields:
+          - { name: main, label: About Intro, widget: markdown, minimal: true }
+          - { name: secondary, label: About Secondary, widget: markdown, minimal: true }
+          - { name: terciary, label: About Terciary, widget: markdown, minimal: true }
+          - { name: image1, label: Image 1, widget: image, hint: Side-by-side with Image 2 }
+          - { name: image2, label: Image 2, widget: image, hint: Side-by-side with Image 1 }
+          - { name: image3, label: Image 3, widget: image }
   - label: "Artwork"
     name: "artwork"
     editor:
