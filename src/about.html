@@ -3,8 +3,8 @@ layout: main.html
 ---
 
 <!-- header section -->
-<div class="mt-[{{ global.navbar_height }}] p-16 pb-56 flex justify-center items-center bg-primary-500 text-white-500">
-    <h1 class="mt-20 text-6xl text-center">Meet artist G4LLO</h1>
+<div class="mt-[{{ global.navbar_height }}] p-4 md:p-16 pb-56 flex justify-center items-center bg-primary-500 text-white-500" id="header-container">
+    <h1 class="mt-8 md:mt-20 text-6xl text-center">Meet artist G4LLO</h1>
 </div>
 
 <!-- about intro -->
@@ -15,7 +15,7 @@ layout: main.html
 </div>
 
 <!-- about continued -->
-<div class="flex flex-wrap justify-center items-center mt-64 min-[375px]:mt-44 min-[425px]:mt-40 md:mt-32 mb-16">
+<div class="flex flex-wrap justify-center items-center mt-64 min-[375px]:mt-44 min-[425px]:mt-40 md:mt-32 mb-16 pt-20" id="about-cont">
     <div class="p-8 md:pr-0 lg:pl-28 leading-8 md:w-1/2">
         <p>{{ pages.about.secondary | newline_to_br }}</p>
     </div>
@@ -37,3 +37,19 @@ layout: main.html
         </p>
     </div>
 </div>
+
+<script>
+    const introBoxEle = document.getElementById("intro-box");
+    const introBoxEleHeight = introBoxEle.offsetHeight;
+    const topHeight = Math.ceil(introBoxEleHeight - (introBoxEleHeight / 3));
+
+    introBoxEle.style.top = `-${topHeight}px`;
+    introBoxEle.style.marginTop = 0;
+    introBoxEle.style.marginBottom = 0;
+
+    const headerContainerEle = document.getElementById("header-container");
+    headerContainerEle.style.paddingBottom = `${introBoxEleHeight}px`;
+
+    const aboutContEle = document.getElementById("about-cont");
+    aboutContEle.style.marginTop = `${Math.max(introBoxEleHeight / 3)}px`;
+</script>
