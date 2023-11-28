@@ -3,43 +3,53 @@ layout: main.html
 ---
 
 <!-- header section -->
-<div class="mt-[{{ global.navbar_height }}] p-16 pb-56 flex justify-center items-center bg-primary-500 text-white-500">
-    <h1 class="mt-20 text-6xl text-center">Meet artist G4LLO</h1>
+<div class="mt-[{{ global.navbar_height }}] p-4 md:p-16 pb-56 flex justify-center items-center bg-primary-500 text-white-500" id="header-container">
+    <h1 class="mt-8 md:mt-20 text-6xl text-center">Meet artist G4LLO</h1>
 </div>
 
 <!-- about intro -->
 <div class="relative">
-    <div class="absolute -top-44 md:-top-36 lg:-top-32 left-0 border-4 border-black-500 shadow-retro m-5 md:m-12 lg:mx-48 p-4 bg-white-500">
-        <p class="leading-7">G4LLO (pronounced, Ga-yo like a Spanish rooster Gallo) is a multifaceted digital artist, vocalist, DJ. Everything about his life has involved chaos, and he has learned to become a friend to it. From being a first-generation Guatemalan-American, to learning that he has traits of AuDHD, OCD and Bipolar II. Or learning about his trans and queer identities, and his fluid sexuality too.</p>
+    <div class="absolute -top-44 md:-top-36 lg:-top-32 left-0 border-4 border-black-500 shadow-retro m-5 md:m-12 lg:mx-48 p-4 bg-white-500" id="intro-box">
+        <p class="leading-7">{{ pages.about.main }}</p>
     </div>
 </div>
 
 <!-- about continued -->
-<div class="flex flex-wrap justify-center items-center mt-64 min-[375px]:mt-44 min-[425px]:mt-40 md:mt-32 mb-16">
+<div class="flex flex-wrap justify-center items-center mt-64 min-[375px]:mt-44 min-[425px]:mt-40 md:mt-32 mb-16 pt-20" id="about-cont">
     <div class="p-8 md:pr-0 lg:pl-28 leading-8 md:w-1/2">
-        <p class="mb-4">He identifies with Rigoberta Menchu's term, Ladino, being a son of a mixed meztizo lineage within Guatemalan paternal lines, and has Cantonese mixed with Spaniard diaspora lineages.</p>
-
-        <p class="mb-4">His life started with Jehovah Witnesses, and he eventually joined the organization in hopes of escaping and praying away his own queerness and transgender identities. Seth has coped with domestic violence throughout his childhood via drawing since the age of 2 in addition to dedicating his childhood to music organizations such as band choir and marching bands over the span of 9 years, and eventually minoring in Music at university.</p>
-
-        <p>Being a son of dedicated fastfood workers, it has become a mission for Seth to give back to those who have fed him, raised him and taught him throughout his life. He cares and advocates for the Carribbean communities of Florida, the Black American community who have given him the words to better find his authentic identities, as well as the Indigenous communities that fight for their rights to live in peace in their own lands.</p>
+        <p>{{ pages.about.secondary | newline_to_br }}</p>
     </div>
 
     <div class="md:w-1/2">
-        <img src="https://placehold.co/500/png" alt="" class="border-4 border-black-500 shadow-retro w-4/5 lg:w-1/2 mx-auto mb-12 lg:mb-0 lg:-translate-x-1/4 lg:translate-y-[20%]">
-        <img src="https://placehold.co/500/png" alt="" class="border-4 border-black-500 shadow-retro w-4/5 lg:w-1/2 mx-auto lg:translate-x-1/4 lg:-translate-y-[20%]">
+        <img src="{{ pages.about.image1 }}" alt="" class="border-4 border-black-500 shadow-retro w-4/5 lg:w-1/2 mx-auto mb-12 lg:mb-0 lg:-translate-x-1/4 lg:translate-y-[20%]">
+        <img src="{{ pages.about.image2 }}" alt="" class="border-4 border-black-500 shadow-retro w-4/5 lg:w-1/2 mx-auto lg:translate-x-1/4 lg:-translate-y-[20%]">
     </div>
 </div>
 
 <!-- about continued (2) -->
 <div class="flex flex-wrap justify-center items-center bg-secondary-500 pt-16 pb-12">
     <div class="md:w-1/2">
-        <img src="https://placehold.co/500/png" alt="" class="border-4 border-black-500 shadow-retro w-4/5 max-w-[400px] mx-auto">
+        <img src="{{ pages.about.image3 }}" alt="" class="border-4 border-black-500 shadow-retro w-4/5 max-w-[400px] mx-auto">
     </div>
 
     <div class="p-8 md:pl-0 lg:pr-36 leading-8 md:w-1/2">
-        <p class="mb-4">This space is for those who've had to overcome days of homelessnes, narcisstic abuse, addiction, years of domestic violence, survive suicidality and self harm, overcome un-doing generationally inherited internalized ableism and racism, overall chaos and trans neo diaspora.</p>
-
-        <p>This site is a reminder to All on the power of self-expression and self definition in a world that obligates many to conform oppressive, reactive structures. Welcome to my synthesis of my life and to the New World order which frees the lives of BIPOC Queer/Trans, and Disabled lives.
+        <p class="mb-4">{{ pages.about.terciary | newline_to_br }}</p>
         </p>
     </div>
 </div>
+
+<script>
+    const introBoxEle = document.getElementById("intro-box");
+    const introBoxEleHeight = introBoxEle.offsetHeight;
+    const topHeight = Math.ceil(introBoxEleHeight - (introBoxEleHeight / 3));
+
+    introBoxEle.style.top = `-${topHeight}px`;
+    introBoxEle.style.marginTop = 0;
+    introBoxEle.style.marginBottom = 0;
+
+    const headerContainerEle = document.getElementById("header-container");
+    headerContainerEle.style.paddingBottom = `${introBoxEleHeight}px`;
+
+    const aboutContEle = document.getElementById("about-cont");
+    aboutContEle.style.marginTop = `${Math.max(introBoxEleHeight / 3)}px`;
+</script>
