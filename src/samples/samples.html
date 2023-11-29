@@ -13,7 +13,7 @@ layout: main.html
         <div class="border-4 border-black-500 shadow-retro m-3 md:my-5">
             <a href="{{ sample.title | slugify }}">
                 <div>
-                    <img src="/images/{{ sample.image }}" alt="{{ sample.title }}" class="w-[160px] h-[160px] md:w-[200px] md:h-[200px] lg:w-[275px] lg:h-[275px] object-cover">
+                    <img src="{{ sample.image }}" alt="{{ sample.title }}" class="w-[160px] h-[160px] md:w-[200px] md:h-[200px] lg:w-[275px] lg:h-[275px] object-cover">
                 </div>
 
                 <p class="bg-white-500 border-t-2 border-black-500 py-2 text-center">{{ sample.title }}</p>
