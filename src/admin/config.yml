@@ -63,3 +63,28 @@ collections:
                     multiple: false
               - { label: Price, name: price, widget: number }
               - { label: Date, name: date, widget: datetime, date_format: "MM/DD/YYYY", format: "MM/DD/YYYY" }
+  - label: Settings
+    name: settings
+    editor:
+      preview: false
+    files:
+      - label: Website
+        name: website
+        file: "src/_data/global.yaml"
+        fields:
+          - { name: website_name, label: Website name, widget: string, hint: This name will appear in the browser tab and in search results. }
+          - { name: website_desc, label: Website description, widget: string, hint: This description will appear in search results. This should include relevant words you think your users will search for. }
+          - { name: website_keywords, label: Website keywords, widget: string, hint: This improves your SEO or search ranking. Include comma-separated words and phrases that you think users will type when searching for your website. }
+      - label: Navigation
+        name: navigation
+        file: "src/_data/nav_items.yaml"
+        fields:
+          - label: Navigation Items
+            name: items
+            widget: list
+            allow_add: true
+            collapsed: true
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: url, label: URL fragment, widget: string, hint: This should always start with a forward-slash "/". }
+              - { name: cta, label: CTA, widget: boolean, default: false, hint: "When turned On, this link will be the highlighted link in the navigation bar and in the Home page's hero section. There should only be 1 CTA (Call to Action) link On at a time." }

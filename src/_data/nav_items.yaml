@@ -2,11 +2,7 @@
 items:
   - name: About
     url: '/about'
+    cta: false
   - name: Samples
     url: '/samples'
-  - name: Blog
-    url: '/blog'
-  - name: Shop
-    url: '/shop'
-  - name: Donate
-    url: '/donate'
+    cta: true

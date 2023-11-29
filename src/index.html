@@ -11,7 +11,12 @@ layout: main.html
         
         <!-- CTA -->
         <div class="flex justify-center md:justify-start">
-            <a href="/samples" class="block w-fit mr-2 px-3 py-2.5 bg-primary-200 text-primary-600 border-4 border-primary-600 font-medium hover:bg-primary-600 focus:bg-primary-600 hover:text-white-500 focus:text-white-500 focus:ring-2 focus:ring-primary-500 focus:outline-none">Samples</a>
+            {% for item in nav_items.items %}
+                {% if item.cta == true %}
+                    <a href="{{ item.url }}" class="block w-fit mr-2 px-3 py-2.5 bg-primary-200 text-primary-600 border-4 border-primary-600 font-medium hover:bg-primary-600 focus:bg-primary-600 hover:text-white-500 focus:text-white-500 focus:ring-2 focus:ring-primary-500 focus:outline-none">{{ item.name }}</a>
+                {% endif %}
+            {% endfor %}
+            
         </div>
     </div>
 

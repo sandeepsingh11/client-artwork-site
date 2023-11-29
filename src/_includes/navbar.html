@@ -11,7 +11,11 @@
             <!-- CTA buttons and hamburger -->
             <div class="flex md:order-2 items-center">
                 <!-- CTA -->
-                <a href="/samples" class="bg-primary-500 hover:bg-primary-600 text-white-500 focus:ring-2 focus:outline-none focus:ring-black-500 font-medium p-4">Samples</a>
+                {% for item in nav_items.items %}
+                    {% if item.cta == true %}
+                        <a href="{{ item.url }}" class="bg-primary-500 hover:bg-primary-600 text-white-500 focus:ring-2 focus:outline-none focus:ring-black-500 font-medium p-4">{{ item.name }}</a>
+                    {% endif %}
+                {% endfor %}
                 
                 <!-- mobile hamburger -->
                 <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black-500 rounded-lg md:hidden hover:bg-black-100 focus:outline-none focus:ring-2 focus:ring-black-200" aria-controls="navbar-sticky" aria-expanded="false" id="hamburger-open">
@@ -26,9 +30,11 @@
             <div class="items-center justify-between hidden w-full h-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul class="flex flex-col items-center h-full p-4 md:p-0 mt-4 font-medium md:flex-row md:mt-0 md:mx-2">
                     {% for item in nav_items.items %}
-                        <li class="h-full">
-                            <a href="{{ item.url }}" class="block p-4 hover:bg-primary-200">{{ item.name }}</a>
-                        </li>
+                        {% if item.cta == false %}
+                            <li class="h-full">
+                                <a href="{{ item.url }}" class="block p-4 hover:bg-primary-200">{{ item.name }}</a>
+                            </li>
+                        {% endif %}
                     {% endfor %}
                 </ul>
             </div>
