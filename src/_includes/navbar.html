@@ -1,4 +1,4 @@
-<nav class="fixed z-20 top-0 left-0 w-full bg-primary-50 border-b-2 border-black-500">
+<nav class="fixed z-20 top-0 left-0 w-full bg-primary-200 border-b-2 border-black-500">
     <!-- navbar -->
     <div class="max-w-screen-xl flex flex-wrap justify-between items-center mx-auto">
         <!-- left -->
@@ -32,7 +32,7 @@
                     {% for item in nav_items.items %}
                         {% if item.cta == false %}
                             <li class="h-full">
-                                <a href="{{ item.url }}" class="block p-4 hover:bg-primary-200">{{ item.name }}</a>
+                                <a href="{{ item.url }}" class="block p-4 hover:bg-primary-300">{{ item.name }}</a>
                             </li>
                         {% endif %}
                     {% endfor %}
@@ -42,9 +42,9 @@
     </div>
 
     <!-- mobile dropdown menu -->
-    <div class="hidden absolute left-0 top-0 text-center w-full md:hidden bg-white-500" id="mobile-navbar">
+    <div class="hidden absolute left-0 top-0 text-center w-full md:hidden bg-primary-200" id="mobile-navbar">
         <!-- below class to match mobile logo size to non-mobile size -->
-        <div class="bg-black-100 border-b border-black-400">
+        <div class="border-b-2 border-black-400">
             <!-- menu header -->
             <div class="flex justify-between items-center mb-4 h-full">
                 <!-- logo -->
