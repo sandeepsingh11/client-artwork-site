@@ -1,7 +1,24 @@
----
 website_name: seth_diario
 website_desc: my description
 website_keywords: my, keywords
 website_url: https://mywebsite.com
-
-navbar_height: '58px'
+socials:
+  - name: facebook
+    url: ""
+    isActive: false
+  - name: instagram
+    url: https://www.instagram.com/gallo_diario/
+    isActive: true
+  - name: x
+    url: ""
+    isActive: false
+  - name: tiktok
+    url: ""
+    isActive: false
+  - name: soundcloud
+    url: https://soundcloud.com/saucypico
+    isActive: true
+  - name: twitch
+    url: ""
+    isActive: false
+navbar_height: 58px

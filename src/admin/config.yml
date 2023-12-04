@@ -75,6 +75,15 @@ collections:
           - { name: website_name, label: Website name, widget: string, hint: This name will appear in the browser tab and in search results. }
           - { name: website_desc, label: Website description, widget: string, hint: This description will appear in search results. This should include relevant words you think your users will search for. }
           - { name: website_keywords, label: Website keywords, widget: string, hint: This improves your SEO or search ranking. Include comma-separated words and phrases that you think users will type when searching for your website. }
+          - name: socials
+            label: Socials
+            widget: list
+            allow_add: false
+            collapsed: false
+            fields:
+              - { name: name, label: Social, widget: string, hint: Please do not change this name }
+              - { name: url, label: Social URL, widget: string, required: false }
+              - { name: isActive, label: Display, widget: boolean, hint: Toggle to display or hide on the website }
       - label: Navigation
         name: navigation
         file: "src/_data/nav_items.yaml"
