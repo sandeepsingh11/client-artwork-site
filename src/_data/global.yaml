@@ -1,6 +1,7 @@
 website_name: seth_diario
 website_desc: my description
 website_keywords: my, keywords
+website_logo: /images/logo.png
 website_url: https://mywebsite.com
 socials:
   - name: facebook

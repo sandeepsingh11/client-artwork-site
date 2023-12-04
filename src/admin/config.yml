@@ -51,7 +51,7 @@ collections:
               - { label: Title, name: title, widget: string }
               - { label: Description, name: desc, widget: string }
               - { label: Image, name: image, widget: image }
-              - { label: Spotlight, name: highlight, widget: boolean, default: false }
+              - { label: Spotlight, name: highlight, widget: boolean, default: false, hint: Toggle to show or hide in the Home page. Ideally there should only be 2 or 3 Spotlighted samples. }
               - label: Audio
                 name: audio
                 widget: file
@@ -75,6 +75,7 @@ collections:
           - { name: website_name, label: Website name, widget: string, hint: This name will appear in the browser tab and in search results. }
           - { name: website_desc, label: Website description, widget: string, hint: This description will appear in search results. This should include relevant words you think your users will search for. }
           - { name: website_keywords, label: Website keywords, widget: string, hint: This improves your SEO or search ranking. Include comma-separated words and phrases that you think users will type when searching for your website. }
+          - { name: website_logo, label: Website logo, widget: image, hint: The logo must be named "logo.png" }
           - name: socials
             label: Socials
             widget: list
