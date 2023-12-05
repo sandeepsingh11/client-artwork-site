@@ -98,3 +98,9 @@ collections:
               - { name: name, label: Name, widget: string }
               - { name: url, label: URL fragment, widget: string, hint: This should always start with a forward-slash "/". }
               - { name: cta, label: CTA, widget: boolean, default: false, hint: "When turned On, this link will be the highlighted link in the navigation bar and in the Home page's hero section. There should only be 1 CTA (Call to Action) link On at a time." }
+      - name: newsletter
+        label: Newsletter
+        file: "src/_data/newsletter.yaml"
+        fields:
+          - { name: newsletter_desc, label: Newsletter message, widget: string }
+          - { name: isDisplayEverywhere, label: Show newsletter widget on all pages?, widget: boolean }

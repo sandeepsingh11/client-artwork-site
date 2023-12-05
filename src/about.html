@@ -38,6 +38,11 @@ layout: main.html
     </div>
 </div>
 
+<!-- newsletter -->
+{% if newsletter.isDisplayEverywhere %}
+    {% include "newsletter.html" %}
+{% endif %}
+
 <script>
     const introBoxEle = document.getElementById("intro-box");
     const introBoxEleHeight = introBoxEle.offsetHeight;

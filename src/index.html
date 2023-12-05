@@ -75,19 +75,4 @@ layout: main.html
 <!-- blog snippets -->
 
 <!-- newsletter signup -->
-<div class="p-10">
-    <h2 class="mb-8 text-4xl font-medium text-center">Newsletter</h2>
-
-    <form action="">
-        <div class="flex justify-center items-end">
-            <div class="grow md:grow-0 md:w-1/2 mr-2 md:mr-4">
-                <label for="email" class="block font-medium mb-1.5">Email:</label>
-                <input type="email" id="newsletter-email" class="bg-black-100 border-4 border-primary-600 text-black-900 focus:ring-2 focus:ring-primary-500 focus:outline-none block w-full p-2.5" placeholder="davinci@monalisa.com" required>
-            </div>
-
-            <div>
-                <button type="submit" class="inline-block px-3 py-2.5 bg-primary-200 text-primary-600 border-4 border-primary-600 font-medium hover:bg-primary-600 focus:bg-primary-600 hover:text-white-500 focus:text-white-500 focus:ring-2 focus:ring-primary-500 focus:outline-none">Submit</button>
-            </div>
-        </div>
-    </form>
-</div>
+{% include "newsletter.html" %}
