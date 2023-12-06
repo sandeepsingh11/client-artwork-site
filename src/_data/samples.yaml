@@ -21,9 +21,17 @@ items:
     price: 4.5
     date: 10/29/2023
   - title: Artwork 5
-    image: /images/artwork-5.jpg
+    image: /images/2023-12-04-13.51.17.jpg
     audio: /audio/rain-and-thunder-nature-sounds-min.mp3
     highlight: no
     desc: Dang my fifth painting. Are you proud of me? You should be haha.
     price: 4.75
     date: 10/30/2023
+  - highlight: false
+    date: 12/05/2023
+    title: Ladine Child
+    desc: "I was once a trans child who did not know who they were. I'm sure many
+      can relate. "
+    image: /images/2023-12-04-13.51.07.jpg
+    audio: /audio/rain-and-thunder-nature-sounds-min.mp3
+    price: 500
