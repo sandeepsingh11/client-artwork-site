@@ -1,37 +1,57 @@
 items:
-  - title: Artwork 1
+  - title: Queer Power // procreate (2023)
     image: /images/untitled_artwork-2.jpg
     audio: /audio/rain-and-thunder-nature-sounds-min.mp3
     highlight: yes
-    desc: This is my first art piece. Plz enjoy.
+    desc: Experimental and abstract to showcaste one of my pieces that I created as
+      I learned to identify, embrace and love my queerness. Being queer is
+      unmatching, intuitive, abstract, undefined, outside the binary. Queerness
+      is a gift from the Universe, which defies the categorization of a human
+      soul. Alas, I learned that it is not a crime nor a sin to embody that
+      which is Queer.
     price: 4
     date: 10/29/2023
-  - title: Artwork 2
+  - title: Dissonant Love // procreate digital piece (2023)
     image: /images/untitled_artwork-1.jpg
     audio: /audio/rain-and-thunder-nature-sounds-min.mp3
     highlight: no
-    desc: Wow look at this, it took me a lot of time.
+    desc: As I took the time to heal from an abusive relationship, I returned to my
+      love for art and captured layers of dissonance yet beauty. Using my
+      intuition, Dissonant Love captures the emotions I had felt while piecing
+      myself together. While there is dissonance in this world, love is always a
+      choice.
     price: 5.5
     date: 10/29/2023
-  - title: Artwork 3
+  - title: fragmented in space // procreate (2023)
     image: /images/untitled_artwork.jpg
     audio: /audio/rain-and-thunder-nature-sounds-min.mp3
     highlight: yes
-    desc: I like the ocean, so I drew an ocean. Insert some philosophical quote here.
+    desc: Another experimental, intuitive and abstract piece created to express
+      dissonance in this world. Nothing is aligned to the earth so long as she
+      is not loved and respected. Instead, society is entirely constructed to
+      misalign the body, mind, and soul.
     price: 4.5
     date: 10/29/2023
-  - title: Artwork 5
+  - title: Car Crash Heart Ache // oil pastel on paper (2022)
     image: /images/2023-12-04-13.51.17.jpg
     audio: /audio/rain-and-thunder-nature-sounds-min.mp3
     highlight: no
-    desc: Dang my fifth painting. Are you proud of me? You should be haha.
+    desc: Following a car accident, and being gaslight about the cause of the
+      incident-- this piece was born. I used my intuition and sense of play to
+      express the pain of being lied to by someone I considered a close friend
+      of mine. I often have wondered, how many times must I allow the treatment
+      of narcissists to affect my soul especially because it's all I've ever
+      known. This piece reminds me of the pain that I endured as raw and
+      abstract as I could have ever expressed myself.
     price: 4.75
     date: 10/30/2023
   - highlight: false
     date: 12/05/2023
     title: Ladine Child
-    desc: "I was once a trans child who did not know who they were. I'm sure many
-      can relate. "
+    desc: I was once a trans child who did not know who they were. At the time, I
+      could not recognize my face, nor my voice. If I could go back, or offer
+      future generations, I would not assign myself or any child a gender until
+      they themselves are able to identify their own gender.
     image: /images/2023-12-04-13.51.07.jpg
     audio: /audio/rain-and-thunder-nature-sounds-min.mp3
     price: 500
