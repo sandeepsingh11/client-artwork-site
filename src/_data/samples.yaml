@@ -116,3 +116,30 @@ items:
     image: /images/img_1522.jpg
     price: 0
     audio: /audio/lamp-静かに朝は.mp3
+  - highlight: false
+    date: 12/30/2023
+    title: Venus as a Boy Moth // prisma colored pencil on brown paper (2023)
+    desc: Perhaps the most confusing part of identifying my true identity as a trans
+      masculine person, has been accepting that I am at heart feminine.
+      Following the hardest battle of updating my name and gender marker on all
+      my name documents and license and seeing it all match with my authentic
+      self has brought me a beautiful euphoria that resembles this moth. I am
+      feminine, but I am a man- I am queer but I am also within the binary.
+      While I have never seen anyone like me before, I embrace myself with pride
+      knowing that I set a precedent for others to know that it is possible to
+      shine fully as the beautiful person that they are.
+    image: /images/img_1528.jpg
+    audio: /audio/lamp-6号室.mp3
+    price: 0
+  - highlight: true
+    date: 12/30/2023
+    title: Save yourself first <3 // acrylic on canvas (2021)
+    desc: "Having dedicated 2 1/2 years to my ex and our then relationship, I
+      finally gave in to me and realizing that I would be the only person who
+      could save my inner child. It was not possible for me to continue
+      depending on someone to achieve happines, yet putting myself first had
+      always felt wrong, difficult and meaningless. Nevertheless, I persisted to
+      find out who I truly was: not cis-gender, and not just heterosexual."
+    image: /images/img_1527.jpg
+    audio: /audio/lamp-「さち子」【official-music-video】.mp3
+    price: 0
