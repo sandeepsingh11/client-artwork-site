@@ -94,3 +94,14 @@ items:
     image: /images/img_1525.jpg
     audio: /audio/lamp-二人のいた風景.mp3
     price: 0
+  - highlight: false
+    date: 12/30/2023
+    title: Childhood Trinkets // prisma colored pencil on paper (2012)
+    desc: "This still life piece was the beginning of my colored pencil journey on
+      art portfolios. It begs for better perspective yet still embodies the
+      child like expression that I will always possess. Still. Frozen. and
+      endearing. This is how I survived my childhood, if only to impress and try
+      to be useful. "
+    image: /images/img_1531.jpg
+    audio: /audio/lamp-空はグレー.mp3
+    price: 100
