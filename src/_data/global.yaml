@@ -1,5 +1,6 @@
-website_name: gallo_diario
-website_desc: Gallo, the digital artist, vocalist, and DJ. Welcome to his digital diary.
+website_name: seth_diario
+website_desc: Seth // G4LLO, the digital artist, vocalist, and DJ. Welcome to
+  his digital diary.
 website_keywords: gallo, artist, digital artist, vocalist, dj, neurodivergence,
   neurodivergent, LGBTQIA+
 website_logo: /images/untitled_artwork-2.png
@@ -9,7 +10,7 @@ socials:
     url: ""
     isActive: false
   - name: instagram
-    url: https://www.instagram.com/gallo_diario/
+    url: https://www.instagram.com/seth_diario/
     isActive: true
   - name: x
     url: ""
