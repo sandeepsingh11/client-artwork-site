@@ -55,3 +55,27 @@ items:
     image: /images/2023-12-04-13.51.07.jpg
     audio: /audio/rain-and-thunder-nature-sounds-min.mp3
     price: 500
+  - highlight: false
+    date: 12/30/2023
+    title: Frozen Pieces // prisma colored pencil on paper (2013)
+    desc: This still life piece was made when I was in middle school. Joining art
+      club, I owe this creation to the support and belief in my talent from
+      Kathleen Byrnes. This piece perfectly showcastes light on trinkets that I
+      held close to my heart. In other terms, it also captures my fawn/freeze
+      response that I had developed throughout childhood. Perfectly frozen, if
+      only to show aesthetic light when in danger of predators throughout my
+      life.
+    image: /images/img_1426.jpg
+    price: 150
+    audio: /audio/lamp-「シンフォニー」-m.v..mp3
+  - highlight: false
+    date: 12/30/2023
+    title: Indigenous Pain //  acrylic on paper (2016)
+    desc: "There is no singular way to describe the pain that indigenous people have
+      to experience in today's late-stage capitalism. This piece was created
+      when Trump was elected president, a figure who ceases to recognize the
+      humanity of indigenous peoples of the U.S. and their intimate connection
+      to the earth and her resources. "
+    image: /images/2023-12-04-13.52.02.jpg
+    audio: /audio/muñecas.mp3
+    price: 45
