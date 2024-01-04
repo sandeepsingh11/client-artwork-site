@@ -3,10 +3,10 @@ layout: main.html
 ---
 
 <!-- hero -->
-<div class="md:min-h-[100vh] my-16 mt-[{{ global.navbar_height }}] md:p-10 flex flex-wrap justify-center items-center" id="hero">
+<div class="md:min-h-[100vh] my-16 mt-[{{ global.navbar_height }}] px-4 md:p-10 flex flex-wrap justify-center items-center" id="hero">
     <!-- left side -->
-    <div class="my-10 mx-auto">
-        <h1 class="text-6xl mb-2">{{ pages.home.hero_slogan }}</h1>
+    <div class="md:w-1/2 lg:w-[40%] my-10 mx-auto">
+        <h1 class="text-4xl xl:text-6xl font-medium text-center md:text-left mb-2">{{ pages.home.hero_slogan }}</h1>
         <p class="text-lg mb-3 text-center md:text-left">{{ pages.home.hero_desc }}</p>
         
         <!-- CTA -->
@@ -30,18 +30,18 @@ layout: main.html
 <div class="mb-16 px-10" id="highlight">
     <h2 class="text-4xl text-center mb-12 font-medium">Some awesome samples</h2>
 
-    <div class="flex flex-wrap justify-center gap-8 mb-10">
+    <div class="flex flex-wrap justify-center items-start gap-8 mb-10">
         {% for sample in samples.items %}
             {% if sample.highlight == 'yes' %}
                 <div class="border-4 border-black-500 shadow-retro">
-                    <a href="/{{ sample.title | slugify }}" class="focus:ring-4 focus:outline-none focus:ring-black-500">
+                    <a href="/{{ sample.title | slugify }}" class="w-[250px] md:w-[200px] lg:w-[275px] focus:ring-4 focus:outline-none focus:ring-black-500">
                         <!-- art image -->
-                        <div>
-                            <img src="{{ sample.image }}" alt="{{ sample.title }}" class="w-[250px] h-[250px] md:w-[200px] md:h-[200px] lg:w-[275px] lg:h-[275px] object-cover">
+                        <div class="h-[250px] md:h-[200px] lg:h-[275px]" style="width: inherit;">
+                            <img src="{{ sample.image }}" alt="{{ sample.title }}" class="w-full h-full object-cover">
                         </div>
 
                         <!-- art caption -->
-                        <div class="border-t-2 border-black-500 py-3">
+                        <div class="border-t-2 border-black-500 p-2" style="width: inherit;">
                             <p class="text-center">{{ sample.title }}</p>
                         </div>
                     </a>

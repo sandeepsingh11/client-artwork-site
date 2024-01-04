@@ -8,15 +8,17 @@ layout: main.html
 </div>
 
 <!-- samples grid -->
-<div class="flex flex-wrap justify-evenly py-4 lg:py-16 lg:px-8">
+<div class="flex flex-wrap justify-evenly items-start py-4 lg:py-16 lg:px-8">
     {% for sample in samples.items %}
         <div class="border-4 border-black-500 shadow-retro m-3 md:my-5">
-            <a href="{{ sample.title | slugify }}">
-                <div>
-                    <img src="{{ sample.image }}" alt="{{ sample.title }}" class="w-[160px] h-[160px] md:w-[200px] md:h-[200px] lg:w-[275px] lg:h-[275px] object-cover">
+            <a href="{{ sample.title | slugify }}" class="block w-[175px] md:w-[200px] lg:w-[275px]">
+                <div class="h-[175px] md:h-[200px] lg:h-[275px]" style="width: inherit;">
+                    <img src="{{ sample.image }}" alt="{{ sample.title }}" class="w-full h-full object-cover">
                 </div>
 
-                <p class="bg-white-500 border-t-2 border-black-500 py-2 text-center">{{ sample.title }}</p>
+                <div class="bg-white-500 border-t-2 border-black-500 p-2" style="width: inherit;">
+                    <p class="text-center">{{ sample.title }}</p>
+                </div>
             </a>
         </div>
     {% endfor %}
