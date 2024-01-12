@@ -9,6 +9,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/scripts");
     eleventyConfig.addPassthroughCopy("src/admin");
 
+    eleventyConfig.addCollection("samples", (collection) => {
+        return collection.getAll()[0].data.samples.items;
+    });
+
     // Input Directory : src, Output directory: _site
     return {
         dir: { input: 'src', output: '_site' }
