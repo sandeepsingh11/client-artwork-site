@@ -32,7 +32,7 @@ layout: main.html
 
     <div class="flex flex-wrap justify-center items-start gap-8 mb-10">
         {% for sample in samples.items %}
-            {% if sample.highlight == 'yes' %}
+            {% if sample.highlight %}
                 <div class="border-4 border-black-500 shadow-retro">
                     <a href="/{{ sample.title | slugify }}" class="w-[250px] md:w-[200px] lg:w-[275px] focus:ring-4 focus:outline-none focus:ring-black-500">
                         <!-- art image -->
