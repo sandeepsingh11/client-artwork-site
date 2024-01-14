@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/audio");
     eleventyConfig.addPassthroughCopy("src/scripts");
     eleventyConfig.addPassthroughCopy("src/admin");
+    eleventyConfig.addPassthroughCopy("src/_redirects");
 
     eleventyConfig.addCollection("samples", (collection) => {
         return collection.getAll()[0].data.samples.items;
